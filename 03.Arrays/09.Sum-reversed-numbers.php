@@ -4,4 +4,5 @@ $input = strrev($input);
 $input = explode(' ', $input);
 $sum = array_sum($input);
 echo $sum;
+
 ?>

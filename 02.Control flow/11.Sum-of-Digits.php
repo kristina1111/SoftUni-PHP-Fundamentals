@@ -24,6 +24,7 @@
 <?php
 if(isset($_GET['string'])){
     $inputArr = explode(", ", $_GET['string']);
+//    $numbers = array_map('trim', explode(',', trim($_GET['numbers']))); ---> for filtering empty inputs, false, null....
     $inputArr = array_filter($inputArr, function ($value){return $value!== "";});
     $numRegex = '/(?<=^)[\d]+(?=$)/'; ?>
     <table>
