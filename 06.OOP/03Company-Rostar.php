@@ -62,8 +62,15 @@ $employeeArrByDepartment = sortDepartmentsBySalary($employeeArrByDepartment);
 //For printing
 foreach ($employeeArrByDepartment as $key => $value){
     echo "Highest Average Salary: " . $key . PHP_EOL;
+    $counter = 0;
+    $length = $value["employeesInDep"];
     foreach ($value["employeesInDep"] as $employee) {
         echo $employee->iteratePropertiesForPrint(); //??????? need to ignore this
+        if($counter==count($length)-1){
+            break;
+        }
+        $counter++;
+        echo PHP_EOL;
     }
 
     break; // break after the first loop because we need to print only the first department with the highest average salary
@@ -84,6 +91,7 @@ function sortEmployeesBySalary(Employee $a, Employee $b){
     return $b -> getSalary() > $a -> getSalary();
 }
 
+// the idea for such sorting is from http://php.net/manual/en/function.sort.php
 function sortDepartmentsBySalary(array $a){
     $sortableArr = array();
     $sortedArr = array();

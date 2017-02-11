@@ -136,7 +136,7 @@ class Employee
     }
 
     public function iteratePropertiesForPrint(){
-        return $this->name . " " . $this->salary . " " . $this->email . " " . $this->age . PHP_EOL;
+        return $this->name . " " . number_format($this->salary, 2) . " " . $this->email . " " . $this->age;
 
     }
 
