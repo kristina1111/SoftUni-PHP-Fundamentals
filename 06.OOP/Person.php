@@ -2,8 +2,8 @@
 
 class Person
 {
-    public $name;
-    public $age;
+    private $name;
+    private $age;
 
     public function __construct(string $name = "yourname", int $age = 0)
     {

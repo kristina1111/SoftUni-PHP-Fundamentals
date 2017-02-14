@@ -7,7 +7,8 @@ $person  = new Person();
 $name = trim(fgets(STDIN));
 $age = trim(fgets(STDIN));
 
-while(true){
+while (true)
+{
     $person = new Person($name, $age);
     echo $person -> getName() . " " . $person -> getAge() . PHP_EOL;
 

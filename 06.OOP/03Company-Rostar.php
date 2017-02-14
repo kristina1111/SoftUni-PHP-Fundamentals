@@ -25,6 +25,8 @@ Andrei 700.00 Director Coding
 Popeye 13.3333 Sailor SpinachGroup popeye@pop.ey
 
  */
+
+
 require_once "Employee.php";
 
 $inputNum = trim(fgets(STDIN));
