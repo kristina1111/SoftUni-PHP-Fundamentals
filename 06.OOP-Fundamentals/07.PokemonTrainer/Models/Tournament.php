@@ -16,7 +16,7 @@ class Tournament
     /**
      * @param array $trainers
      */
-    public function setTrainers(array $trainers)
+    private function setTrainers(array $trainers)
     {
         $this->trainers = $trainers;
     }
@@ -70,7 +70,8 @@ class Tournament
             $returnArr[$key] = $this->getTrainers()[$key];
         }
 
-        return $returnArr;
+        $this->setTrainers($returnArr);
+//        return $returnArr;
     }
 
     public function __toString()

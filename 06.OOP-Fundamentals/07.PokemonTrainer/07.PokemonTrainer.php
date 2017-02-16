@@ -48,6 +48,6 @@ spl_autoload_register(function($class) {
 $tournament = new Tournament();
 $tournament->start();
 $tournament->playPokemon();
-$tournament->setTrainers($tournament->sortTrainersByBadgesDecr());
+$tournament->sortTrainersByBadgesDecr();
 echo $tournament;
 

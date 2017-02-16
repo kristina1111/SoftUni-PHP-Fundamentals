@@ -246,7 +246,7 @@ class Car
     /**
      * @param string $model
      */
-    public function setModel(string $model)
+    private function setModel(string $model)
     {
         $this->model = $model;
     }
@@ -262,7 +262,7 @@ class Car
     /**
      * @param string $weight
      */
-    public function setWeight(string $weight)
+    private function setWeight(string $weight)
     {
         $this->weight = $weight;
     }
@@ -270,7 +270,7 @@ class Car
     /**
      * @param string $color
      */
-    public function setColor(string $color)
+    private function setColor(string $color)
     {
         $this->color = $color;
     }

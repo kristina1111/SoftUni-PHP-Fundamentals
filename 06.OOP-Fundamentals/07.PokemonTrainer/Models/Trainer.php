@@ -45,7 +45,7 @@ class Trainer
     /**
      * @param string $name
      */
-    public function setName(string $name)
+    private function setName(string $name)
     {
         $this->name = $name;
     }
@@ -53,7 +53,7 @@ class Trainer
     /**
      * @param int $numBadges
      */
-    public function setNumBadges(int $numBadges)
+    private function setNumBadges(int $numBadges)
     {
         $this->numBadges = $numBadges;
     }

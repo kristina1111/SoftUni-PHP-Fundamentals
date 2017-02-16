@@ -25,7 +25,7 @@ class Pokemon
     /**
      * @param string $name
      */
-    public function setName(string $name)
+    private function setName(string $name)
     {
         $this->name = $name;
     }
@@ -41,7 +41,7 @@ class Pokemon
     /**
      * @param string $element
      */
-    public function setElement(string $element)
+    private function setElement(string $element)
     {
         $this->element = $element;
     }
@@ -57,7 +57,7 @@ class Pokemon
     /**
      * @param int $health
      */
-    public function setHealth(int $health)
+    private function setHealth(int $health)
     {
         $this->health = $health;
     }
