@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8aa49b4-0350-482c-9478-5e2ef7c5a9c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05.RawData/Models/Car.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05.RawData/Models/Cargo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05.RawData/Models/Engine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05.RawData/Models/Tyre.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/09.MethodSayHallo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/10.OldestFamilyMember/Models/Family.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/10.OldestFamilyMember/Models/Person.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/10.OldestFamilyMember/OldestFamilyMember.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/11.LastDigitName.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/12.NumberInReversedOrder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/13.FibonacciNumbers.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/14.Car/Models/Car.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/14.Car/TripWithCar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/15.DateModifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/16.PrintPeople.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05.Raw-data.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/06.Car-Salesman/06.Car-Salesman.php" afterPath="$PROJECT_DIR$/06.Car-Salesman/06.Car-Salesman.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/08.Google/Models/Occupation.php" afterPath="$PROJECT_DIR$/08.Google/Models/Occupation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/08.Google/Models/Person.php" afterPath="$PROJECT_DIR$/08.Google/Models/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/08.Google/app.php" afterPath="$PROJECT_DIR$/08.Google/app.php" />
-    </list>
+    <list default="true" id="c8aa49b4-0350-482c-9478-5e2ef7c5a9c7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +28,8 @@
       <file leaf-file-name="Raw-data.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/05.RawData/Raw-data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="3" />
+            <state relative-caret-position="374">
+              <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -471,12 +449,12 @@
       <workItem from="1487190660746" duration="743000" />
       <workItem from="1487237755598" duration="11807000" />
       <workItem from="1487260718194" duration="13867000" />
-      <workItem from="1487322943622" duration="12821000" />
+      <workItem from="1487322943622" duration="13024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129871000" />
+    <option name="totallyTimeSpent" value="130074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -487,7 +465,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12700965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39871383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -830,8 +808,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/05.RawData/Raw-data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="3" />
+        <state relative-caret-position="374">
+          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
           <folding />
         </state>
       </provider>
