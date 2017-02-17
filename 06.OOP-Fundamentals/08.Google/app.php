@@ -35,10 +35,10 @@ while (strtolower($input)!="end"){
             break;
         case "car":
             if(array_key_exists($input[0], $personsArr)){
-                $personsArr[$input[0]]->getCar()->changeCar($input[2], $input[3]);
+                $personsArr[$input[0]]->getCar()->changeCar($input[2], floatval($input[3]));
             }else{
                 $personsArr[$input[0]] = new Person($input[0], new Occupation(), new Car());
-                $personsArr[$input[0]]->getCar()->changeCar($input[2], $input[3]);
+                $personsArr[$input[0]]->getCar()->changeCar($input[2], floatval($input[3]));
             }
             break;
 
@@ -49,6 +49,17 @@ while (strtolower($input)!="end"){
 
     $input = trim(fgets(STDIN));
 }
+$input = trim(fgets(STDIN));
+if(array_key_exists($input, $personsArr)){
+    echo $personsArr[$input];
+}
+else{
+    $output ="" . $input . PHP_EOL;
+    $output.= "Company:" . PHP_EOL
+        . "Car:" . PHP_EOL
+        . "Pokemon:" . PHP_EOL
+        . "Parents:" . PHP_EOL
+        . "Children:";
 
-print_r($personsArr);
-
+    echo $output;
+}

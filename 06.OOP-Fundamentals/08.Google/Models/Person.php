@@ -1,5 +1,6 @@
 <?php
 
+require_once "Occupation.php";
 
 class Person
 {
@@ -172,16 +173,40 @@ class Person
     public function __toString()
     {
         $output = "" . $this->getName() . PHP_EOL;
-        $output .= "Company: " . PHP_EOL;
+        $output .= "Company:" . PHP_EOL;
 
         if($this->getOccupation()->getEmployer() !=""){
             $output .= $this->getOccupation()->getEmployer() . " "
-                . $this->getOccupation()->getDepartment() . " " . $this->getOccupation()->getSalary() . PHP_EOL;
+                . $this->getOccupation()->getDepartment() . " " . number_format($this->getOccupation()->getSalary(), 2) . PHP_EOL;
         }
-        $output .= "Car: " . PHP_EOL;
+        $output .= "Car:" . PHP_EOL;
 
-//        if($this->getCar()->getModel())
+        if($this->getCar()->getModel()!=""){
+            $output.= $this->getCar()->getModel() . " " . $this->getCar()->getSpeed() . PHP_EOL;
+        }
+        $output .= "Pokemon:" . PHP_EOL;
 
+        if(count($this->getPokemons())>0){
+            foreach ($this->getPokemons() as $pokemon){
+                $output .= $pokemon->getName() . " " . $pokemon->getType() . PHP_EOL;
+            }
+        }
+
+        $output .= "Parents:" . PHP_EOL;
+
+        if(count($this->getParents())>0){
+            foreach ($this->getParents() as $parent){
+                $output .= $parent->getName() . " " . $parent->getBirthday()->format('d/m/Y') . PHP_EOL;
+            }
+        }
+
+        $output .= "Children:" . PHP_EOL;
+        if(count($this->getChildren())>0){
+            foreach ($this->getChildren() as $child){
+                $output .= $child->getName() . " " . $child->getBirthday()->format('d/m/Y') . PHP_EOL;
+            }
+        }
+        return $output;
     }
 
 }

@@ -50,7 +50,7 @@ class Occupation
      */
     public function getSalary(): float
     {
-        return number_format($this->salary, 2);
+        return $this->salary;
     }
 
     /**
