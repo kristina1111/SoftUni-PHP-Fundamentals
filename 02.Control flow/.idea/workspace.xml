@@ -2,27 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a59c9525-7c8f-43e6-92d4-d469ef979d5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04.Associative arrays/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04.Associative arrays/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04.Associative arrays/01.Word-mapping.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04.Associative arrays/02.Count-real-numbers.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04.Associative arrays/03.Coloring-texts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04.Associative arrays/04.Navigation-builder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04.Associative arrays/05.Text-filter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04.Associative arrays/06.Sntence-extractor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/.idea/06.OOP.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/01.Define-class-Person.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/02.Opinion-poll.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/03Company-Rostar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/Employee.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../06.OOP/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/11.Sum-of-Digits.php" afterPath="$PROJECT_DIR$/11.Sum-of-Digits.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../03.Arrays/09.Sum-reversed-numbers.php" afterPath="$PROJECT_DIR$/../03.Arrays/09.Sum-reversed-numbers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/CommandAbstract.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/DoughCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/Executable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/PizzaCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/ToppingCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Entities/Dough.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Entities/Pizza.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Entities/Topping.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/IO/ConsoleIO.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/IO/IOInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/app.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/06.Person/PersonApp/Entities/Child.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/06.Person/PersonApp/Entities/Person.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/06.Person/app.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/07.BookShop/BookShopApp/Entities/Books/Gold.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/07.BookShop/BookShopApp/Entities/Books/Standard.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/07.BookShop/app.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/08.Mankind/MankindApp/Entities/Employee.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/08.Mankind/MankindApp/Entities/HumanAbstract.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/08.Mankind/MankindApp/Entities/Student.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/08.Mankind/app.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidArtistNameException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongLengthException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongMinutesException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongNameException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongSecondsException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Entities/Playlist.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Entities/Song.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/IO/ConsoleIO.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/IO/IOInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/app.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Animal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/AnimalInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Cat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Dog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Frog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Kitten.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Tomcat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/IO/ConsoleIO.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/IO/IOInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/app.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/judge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../07.OOP-Fundamentals/04.MordorsCrueltyPlan/MordorsCrueltyPlan.php" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/04.MordorsCrueltyPlan/MordorsCrueltyPlan.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -183,7 +207,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
+    <option name="x" value="-15" />
     <option name="y" value="-2" />
     <option name="width" value="1382" />
     <option name="height" value="754" />
@@ -204,6 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,7 +244,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +251,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../06.OOP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -324,17 +348,18 @@
       <workItem from="1486633179969" duration="7793000" />
       <workItem from="1486656305735" duration="2298000" />
       <workItem from="1486675997579" duration="35000" />
+      <workItem from="1488068221780" duration="16000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96195000" />
+    <option name="totallyTimeSpent" value="96211000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-2" width="1382" height="754" extended-state="0" />
-    <editor active="true" />
+    <frame x="-15" y="-2" width="1382" height="754" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

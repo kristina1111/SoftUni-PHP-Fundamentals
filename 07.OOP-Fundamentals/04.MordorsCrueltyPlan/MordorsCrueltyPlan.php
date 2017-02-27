@@ -32,4 +32,4 @@ foreach ($input as $food){
     $meal->givePoints($playerGandalf->getMood());
 
 }
-echo $playerGandalf;
+\IO\ConsoleIO::write($playerGandalf);
