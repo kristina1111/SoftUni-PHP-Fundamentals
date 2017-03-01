@@ -2,51 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a59c9525-7c8f-43e6-92d4-d469ef979d5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/CommandAbstract.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/DoughCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/Executable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/PizzaCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Core/Commands/ToppingCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Entities/Dough.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Entities/Pizza.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/Entities/Topping.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/IO/ConsoleIO.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/PizzaApp/IO/IOInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/05.PizzaCalories/app.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/06.Person/PersonApp/Entities/Child.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/06.Person/PersonApp/Entities/Person.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/06.Person/app.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/07.BookShop/BookShopApp/Entities/Books/Gold.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/07.BookShop/BookShopApp/Entities/Books/Standard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/07.BookShop/app.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/08.Mankind/MankindApp/Entities/Employee.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/08.Mankind/MankindApp/Entities/HumanAbstract.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/08.Mankind/MankindApp/Entities/Student.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/08.Mankind/app.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidArtistNameException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongLengthException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongMinutesException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongNameException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Core/Exceptions/InvalidSongSecondsException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Entities/Playlist.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/Entities/Song.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/IO/ConsoleIO.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/OnlineRadioApp/IO/IOInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/09.OnlineRadioDatabase/app.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Animal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/AnimalInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Cat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Dog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Frog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Kitten.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/Entities/Tomcat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/IO/ConsoleIO.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/AnimalsApp/IO/IOInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/app.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/10.Animals/judge.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../07.OOP-Fundamentals/04.MordorsCrueltyPlan/MordorsCrueltyPlan.php" afterPath="$PROJECT_DIR$/../07.OOP-Fundamentals/04.MordorsCrueltyPlan/MordorsCrueltyPlan.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../09.Forms and Sessions/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../09.Forms and Sessions/01.StudentSorting/StudentsApp/Entities/Student.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../09.Forms and Sessions/01.StudentSorting/StudentsApp/Public/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../09.Forms and Sessions/01.StudentSorting/StudentsApp/Public/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../09.Forms and Sessions/01.StudentSorting/StudentsApp/Views/AddStudents.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../09.Forms and Sessions/01.StudentSorting/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../01.Syntax/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../01.Syntax/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/13.Student-sorting.php" afterPath="$PROJECT_DIR$/13.Student-sorting.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,7 +28,7 @@
       <file leaf-file-name="09.Show-annual-expenses.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/09.Show-annual-expenses.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="-146">
               <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding />
             </state>
@@ -74,7 +38,7 @@
       <file leaf-file-name="10.Find-Primes-In-Range.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10.Find-Primes-In-Range.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
+            <state relative-caret-position="194">
               <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
               <folding />
             </state>
@@ -101,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="13.Student-sorting.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="13.Student-sorting.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/13.Student-sorting.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
-              <caret line="108" column="23" lean-forward="false" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+            <state relative-caret-position="-1129">
+              <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -115,17 +79,17 @@
         <entry file="file://$PROJECT_DIR$/03.Calculate-two-numbers.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="629">
-              <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+              <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="06.Render-Students-Info.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="06.Render-Students-Info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/06.Render-Students-Info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="-503">
+              <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -135,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/07.Square-Root-Sum.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -154,7 +118,7 @@
       <file leaf-file-name="08.Rich-peoples-problems.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08.Rich-peoples-problems.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="-10">
               <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
               <folding />
             </state>
@@ -188,8 +152,8 @@
         <option value="$PROJECT_DIR$/09.Show-annual-expenses.php" />
         <option value="$PROJECT_DIR$/10.Find-Primes-In-Range.php" />
         <option value="$PROJECT_DIR$/12.Modify-string.php" />
-        <option value="$PROJECT_DIR$/13.Student-sorting.php" />
         <option value="$PROJECT_DIR$/11.Sum-of-Digits.php" />
+        <option value="$PROJECT_DIR$/13.Student-sorting.php" />
       </list>
     </option>
   </component>
@@ -228,6 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -243,7 +208,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,17 +313,21 @@
       <workItem from="1486656305735" duration="2298000" />
       <workItem from="1486675997579" duration="35000" />
       <workItem from="1488068221780" duration="16000" />
+      <workItem from="1488203222398" duration="1105000" />
+      <workItem from="1488220316491" duration="4953000" />
+      <workItem from="1488309331799" duration="22000" />
+      <workItem from="1488309437552" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96211000" />
+    <option name="totallyTimeSpent" value="102320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-15" y="-2" width="1382" height="754" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23524962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -386,7 +354,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -704,14 +674,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DI00.985/students.php" />
-    <entry file="file://$PROJECT_DIR$/08.Rich-peoples-problems.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/12.Modify-string.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -720,18 +682,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09.Show-annual-expenses.php">
+    <entry file="file://$PROJECT_DIR$/03.Calculate-two-numbers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="629">
+          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10.Find-Primes-In-Range.php">
+    <entry file="file://$PROJECT_DIR$/06.Render-Students-Info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+        <state relative-caret-position="-503">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -739,7 +701,31 @@
     <entry file="file://$PROJECT_DIR$/07.Square-Root-Sum.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08.Rich-peoples-problems.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09.Show-annual-expenses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10.Find-Primes-In-Range.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -754,24 +740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/13.Student-sorting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="108" column="23" lean-forward="false" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03.Calculate-two-numbers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06.Render-Students-Info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="-1129">
+          <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
           <folding />
         </state>
       </provider>

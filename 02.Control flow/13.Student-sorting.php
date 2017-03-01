@@ -106,17 +106,11 @@
 
 </form>
 <?php
-print_r($_GET['firstName']);
+//print_r($_GET['firstName']);
 if(!empty($_GET['firstName']) && !empty($_GET['secondName']) && !empty($_GET['email']) && !empty($_GET['examScore'])){
     echo "YES";
 }
 
-class Student{
-    public $firstName = "default";
-    public $secondName = "default";
-    public $email = "default";
-    public $examScore = "default";
-}
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

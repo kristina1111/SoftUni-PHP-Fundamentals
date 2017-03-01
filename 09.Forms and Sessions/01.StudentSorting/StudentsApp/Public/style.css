@@ -1,0 +1,49 @@
+form{
+    margin: 10px;
+}
+form section{
+    margin: 10px;
+}
+.add-students{
+    border: 1px solid #808080;
+}
+
+.add-students thead{
+    border: 1px solid #808080;
+}
+
+.add-students tbody tr:nth-child(odd){
+    background: rgba(192,192,192,0.3);
+}
+
+.add-students td, th {
+    padding: 10px;
+}
+.add-students td input{
+    padding: 5px;
+}
+.add-students td input.exam-score{
+    width: 100px;
+}
+
+form button {
+    background: rgb(35,68,101)!important;
+    color: #ffffff!important;
+}
+
+form button:hover {
+    background: #ffffff!important;
+    color: rgb(35,68,101)!important;
+}
+
+#template {
+    display: none;
+}
+
+.result-table {
+    margin: 10px;
+}
+
+.result-table th {
+    width: 130px;
+}
