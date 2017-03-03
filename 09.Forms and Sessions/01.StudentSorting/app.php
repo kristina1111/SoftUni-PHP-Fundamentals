@@ -7,6 +7,8 @@ spl_autoload_register(function ($class) {
     require_once $class;
 });
 
+session_start(); // It's important to start the session after requiring all the classes, becaouse otherwise error ...incomplete class object occurs
+
 include_once "StudentsApp/Views/AddStudents.php";
 
 if (!(empty($_POST['firstName']) && empty($_POST['secondName']) && empty($_POST['email']) && empty($_POST['examScore']))
@@ -16,7 +18,9 @@ if (!(empty($_POST['firstName']) && empty($_POST['secondName']) && empty($_POST[
     $secNameArr = $_POST['secondName'];
     $emailArr = $_POST['email'];
     $scoreArr = $_POST['examScore'];
-    $studentsArr = [];
+
+
+
     try {
         for ($i = 0; $i < count($firstNameArr) - 1; $i++) { //to count($firstNameArr)-1 because we use template for dynamic adding fields and they also get in the arrays but are empty;
             if (empty($firstNameArr[$i]) || empty($secNameArr[$i]) || empty($emailArr[$i]) || empty($scoreArr[$i])) {
@@ -27,12 +31,20 @@ if (!(empty($_POST['firstName']) && empty($_POST['secondName']) && empty($_POST[
 
         for ($i = 0; $i < count($firstNameArr) - 1; $i++) {
             $student = new \StudentsApp\Entities\Student($firstNameArr[$i], $secNameArr[$i], $emailArr[$i], $scoreArr[$i]);
-            $studentsArr[$student->getEmail()] = $student; // save student in associative array as keys their email because email must be unique
+            if(array_key_exists($student->getEmail(), $_SESSION)){
+                throw new Exception("You are trying to record a student that is already recorded!");
+            }
+            $_SESSION[$student->getEmail()] = $student; // save student in associative array as keys their email because email must be unique
+//            $studentsArr[$student->getEmail()] = $student;
         }
 
+//        $studentsArr = $_SESSION; // arrays are of referent type, this is shallow copy and in order to work it need to be deep-copy
+
+//        echo "<pre>";
+//        print_r($_SESSION);
         $property = $_POST['howSort'];
         $ascendingOrDescending = $_POST['howOrder'];
-        $studentsArr = sortByProperty($studentsArr, $property, $ascendingOrDescending);
+        $_SESSION = sortByProperty($_SESSION, $property, $ascendingOrDescending);
         include_once "StudentsApp/Views/SortedStudentsTable.php";
 
 
@@ -40,9 +52,6 @@ if (!(empty($_POST['firstName']) && empty($_POST['secondName']) && empty($_POST[
         echo $e->getMessage();
     }
 
-
-//        echo "<pre>";
-//        print_r($studentsArr);
 }
 
 function sortByProperty(array $students, string $property, string $ascendingOrDescending)

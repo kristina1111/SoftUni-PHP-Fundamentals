@@ -43,11 +43,16 @@ class Validator
      */
     public static function validateScore($score) : int
     {
-        if(!(filter_var($score, FILTER_VALIDATE_INT,
-            array(
-                'min-range' => self::SCORE_MIN_RANGE,
-                'max-range' => self::SCORE_MAX_RANGE
-            ))))
+//        Not working for checking min and max value
+//        if(!(filter_var($score, FILTER_VALIDATE_INT, array('options' => array(
+//            'min-range' => self::SCORE_MIN_RANGE,
+//            'max-range' => self::SCORE_MAX_RANGE
+//        )))))
+        if(!(filter_var($score, FILTER_VALIDATE_INT)))
+        {
+            throw new \Exception("Enter valid number!");
+        }
+        if(intval($score)<0 || intval($score)>400)
         {
             throw new \Exception("Score must be number between " . self::SCORE_MIN_RANGE . " and " . self::SCORE_MAX_RANGE . "!");
         }

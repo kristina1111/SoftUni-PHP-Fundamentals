@@ -1,0 +1,25 @@
+<h1>Calculate the amount of money you will get from deposit with parameters by your choice!</h1>
+<form method="POST" action="">
+    <div>
+        <label for="">Enter amount: </label>
+        <input type="number" name="amount" placeholder="i.e. 1000">
+    </div>
+    <div>
+        <input type="radio" name="currency" value="usd" checked> <label for="">USD</label>
+        <input type="radio" name="currency" value="eur"> <label for="">EUR</label>
+        <input type="radio" name="currency" value="bgn"> <label for="">BGN</label>
+    </div>
+    <div>
+        <label for="">Compound interest amount in percent: </label>
+        <input type="number" name="interestAmount" placeholder="i.e. 5">
+    </div>
+    <div>
+        <select name="period" id="">
+            <option value="6">6 months</option>
+            <option value="12">12 months</option>
+            <option value="24">24 months</option>
+            <option value="60">60 months</option>
+        </select>
+        <input type="submit" name="calculate" value="Calculate!">
+    </div>
+</form>
