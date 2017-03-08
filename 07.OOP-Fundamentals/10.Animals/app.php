@@ -1,7 +1,4 @@
 <?php
-
-
-
 spl_autoload_register(function($class) {
     $class = str_replace("\\", "/", $class);
     $class = $class . '.php';
@@ -33,8 +30,8 @@ while (strtolower($type) != "beast!"){
     $type = \AnimalsApp\IO\ConsoleIO::readLine();
 }
 if(count($animals)>0){
-    /** @var Animal $a */
+    /** @var $a \AnimalsApp\Entities\Animal */
     foreach ($animals as $a){
-        ConsoleIO::write($a);
+        \AnimalsApp\IO\ConsoleIO::write($a);
     }
 }

@@ -1,0 +1,72 @@
+fieldset {
+    margin-bottom: 20px;
+}
+#personal-info {
+    /*width: 250px;*/
+    padding: 20px!important;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+input[type='text'] {
+    display: block;
+    width:300px;
+}
+
+.comp-skills-fieldset label{
+    display: block;
+
+}
+.comp-skills-fieldset input[type='text'] {
+    width: 200px;
+    display: inline-block;
+}
+
+.comp-skills-fieldset select{
+    width: 95px;
+    display: inline-block;
+
+}
+
+.template {
+    display: none;
+}
+
+.other-skills-fieldset select {
+    display: block;
+    width: 140px;
+    margin-bottom: 5px;
+}
+
+.other-skills-fieldset .language-input{
+    margin-top: 25px;
+}
+
+.other-skills-fieldset legend {
+    margin-bottom: 0px;
+}
+
+.other-skills-fieldset label {
+    display: block;
+    margin-top: 20px;
+}
+
+.other-skills-fieldset .element-inline-block {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+table{
+    margin-bottom: 20px;
+}
+
+table, thead, tbody, tr, th, td {
+    border: 1px solid #808080;
+    padding: 5px;
+}
+th{
+    text-align: center;
+}
