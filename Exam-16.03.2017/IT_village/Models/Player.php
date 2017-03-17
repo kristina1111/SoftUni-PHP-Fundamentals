@@ -12,6 +12,7 @@ namespace Models;
 class Player
 {
     const MONEY_PER_INN_OWNED = 20;
+    const MONEY_OWNED_AT_START = 50;
 
     private $x;
     private $y;
@@ -29,7 +30,7 @@ class Player
     {
         $this->x = $x;
         $this->y = $y;
-        $this->setMoney(50);
+        $this->setMoney(self::MONEY_OWNED_AT_START);
         $this->numInnsOwned = 0;
     }
 
