@@ -15,18 +15,9 @@ $input = [
 
 $player = new \Models\Player(intval(trim($input['beginning'][0]))-1, intval(trim($input['beginning'][strlen($input['beginning'])-1]))-1);
 $field = new \Models\Board($input['board']);
-
-//var_dump($player);
-//exit;
-
-//$field = new \Models\BoardGame($_GET['board']);
 $moves = array_reverse(explode(' ', trim($input['moves'])));
 $cnt = count($moves)-1;
 $game = new \Models\Game($field, $player, $cnt);
-
-
-
-
 
 while ($game->getCounterMoves()>=0){
     if($game->getBoard()->getNumInns()==$game->getPlayer()->getNumInnsOwned()){
