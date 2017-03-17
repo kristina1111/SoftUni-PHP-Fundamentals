@@ -1,6 +1,5 @@
-<?php /** @var $person \CVgeneratorApp\Entities\Person */
-if (isset($_POST['generateCV'])) :
-    ?>
+<?php /** @var $person \CVgeneratorApp\Entities\Person */ ?>
+<section id="cv-output-container" class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-10">
     <h1>CV</h1>
 
     <table>
@@ -78,7 +77,7 @@ if (isset($_POST['generateCV'])) :
             <th>Language</th>
             <th>Skill Level</th>
         </tr>
-        <?php foreach ($person->getProgrammingLangs() as $key=>$value) : ?>
+        <?php foreach ($person->getProgrammingLangs() as $key => $value) : ?>
             <tr>
                 <td><?= $key; ?></td>
                 <td><?= $value; ?></td>
@@ -104,11 +103,11 @@ if (isset($_POST['generateCV'])) :
             <th>Reading</th>
             <th>Writing</th>
         </tr>
-        <?php foreach ($person->getLanguages() as $key=>$value) : ?>
+        <?php foreach ($person->getLanguages() as $key => $value) : ?>
             <tr>
                 <td><?= $key; ?></td>
-                <?php  foreach ($value as $level) : ?>
-                <td><?= $level; ?></td>
+                <?php foreach ($value as $level) : ?>
+                    <td><?= $level; ?></td>
                 <?php endforeach; ?>
             </tr>
         <?php endforeach; ?>
@@ -118,4 +117,4 @@ if (isset($_POST['generateCV'])) :
         </tr>
         </tbody>
     </table>
-<?php endif; ?>
+</section>

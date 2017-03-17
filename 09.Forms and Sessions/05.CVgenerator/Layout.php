@@ -17,13 +17,6 @@
     include 'CVgeneratorApp\Views\inputForm.php';
     ?>
 </section>
-<section id="cv-output-container" class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-10">
-    <?php
-    include 'CVgeneratorApp\Views\outputCV.php';
-    ?>
-</section>
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="CVgeneratorApp/Public/script.js"> </script>
 </body>

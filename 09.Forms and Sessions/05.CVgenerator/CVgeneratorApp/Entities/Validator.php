@@ -8,6 +8,9 @@ class Validator
         if(!preg_match('/(?<=^)[a-zA-Z]+(?=$)/', $name)){
             throw new \Exception("Name can only consist of latin letters!");
         }
+        if(strlen($name)<2){
+            throw new \Exception("Name need to be more at lest 2 characters long!");
+        }
         return $name;
     }
 
