@@ -1,0 +1,274 @@
+Problem 4. Mass Effect
+The galaxy is a dangerous place - the vast void is full of starships which endlessly fight one another.
+There are several star systems in the galaxy - Artemis Tau, Serpent Nebula, Hades Gamma and Kepler Verge. Starships can travel from one star system to another (if they are neighbouring) and fight other starships. A starship has health, shields, damage, fuel and shoots a specific projectile when attacking another ship. There are 3 types of starships - Frigates, Cruisers and Dreadnoughts, and each one respectively has different characteristics.
+Your task is to implement the project structure, each of the ships, projectiles, enahcements and a few commands.
+
+Star Systems
+
+Artemis-Tau has neighbors with the following fuel consumption:
+Serpent-Nebula – 50
+Kepler-Verge – 120
+
+Serpent-Nebula has neighbors with the following fuel consumption:
+Artemis-Tau – 50
+Hades-Gamma – 360
+
+Hades-Gamma has neighbors with the following fuel consumption:
+Serpent-Nebula – 360
+Kepler-Verge – 145
+
+Kepler-Verge has neighbors with the following fuel consumption:
+Hades-Gamma – 145
+Artemis-Tau – 120
+
+Commands
+Implement the following commands:
+
+create {shipType} {shipName} {starSystem} {enhancement1 enhancements2 ...} - creates a new ship with the given name in the given star system. Optionally, an arbitrary number of enhancements can follow in the input string - they should all be added to the ship through the AddEnhancement method and their effects applied.
+Success message: Created {shipType} {shipName}
+
+attack {attackerShip} {targetShip} - forces a ship to attack another. The attacking ship should produce a projectile and it should be given to the target ship to respond to it (study the methods of the IStarship and IProjectile interfaces to get a better idea).
+Success message: "{attackerShip} attacked {targetShip}"
+If the ship is destroyed as a result, print "{targetShip} has been destroyed" as well.
+
+plot-jump {shipName} {starSystem} - changes the location of the given ship to the new star system.
+Success message: "{shipName} jumped from {startLocation} to {destinationLocation}"
+
+status-report {shipName} - displays information about the ship in the following format:
+If health > 0
+--{shipName} - {shipType}
+-Location: {locationName}
+-Health: {health}
+-Shields: {shields}
+-Damage: {damage}
+-Fuel: {fuel}
+-Enhancements: {enh1, enh2, ...}
+
+If health <= 0
+--{shipName} - {shipType}
+(Destroyed)
+
+If there are no enhancements, print "N/A".
+If the ship is a frigate (and not destroyed), it should also display the number of projectiles fired so far in the format:
+-Projectiles fired: {count}
+over - stops the game engine
+
+Ships
+There are 3 types of ships:
+Frigate - has start health 60, shields 50, damage 30 and fuel 220. Shoots a ShieldReaver with damage equal to its own damage.
+Cruiser - has start health 100, shields 100, damage 50 and fuel 300. Shoots a PenetrationShell with damage equal to its own damage.
+Dreadnought - has start health 200, shields 300, damage 150 and fuel 700. Shoots a Laser with damage equal to half its shields + own damage. Responds to an attack by raising its shields by 50 before the attack and removes them after it.
+
+Enhancements
+Enhancements give a ship bonuses. Enhancement effect (shields, fuel and damage) should be applied to the ship when added through the AddEnhancement method.
+ThanixCannon - gives a ship bonus 50 damage.
+KineticBarrier - gives a ship bonus 100 shields.
+ExtendedFuelCells - gives a ship bonus 200 fuel.
+
+Projectiles
+PenetrationShell - removes health from the ship equal to the projectile's damage.
+ShieldReaver - removes health from the ship equal to the projectile's damage. It also removes shields from the ship equal to 2x the projectile's damage.
+Laser - removes shields from the ship equal to the projectile's damage. If the damage is more than the ship's shields, it also takes health equal to the damage left. (e.g. 50 shields and 100 health - a laser of 80 damage would remove 50 shields and 30 health, resulting in 0 shields and 70 health for the ship).
+
+Validations
+Perform the following validations:
+
+If a destroyed ship attacks/is attacked or tries to travel to another star system
+print message: Ship is destroyed
+
+Creating a ship with a name that already exists
+print message: Ship with such name already exists
+
+Attacking a ship that is not in the current star system
+print message: No such ship in star system
+
+Attempting to travel to the same star system
+print message: Ship is already in {starSystemName}
+
+Extending the Engine
+Add and implement the following command:
+system-report {starSystem} - displays information about all ships in the given star system in the following format:
+Intact ships:
+{information about ship_1}
+{information about ship_2}
+Destroyed ships:
+{information about ship_3}
+Intact ships should be sorted by health in descending order and by shields as secondary criteria (again in descending order). Destroyed ships should ordered alphabetically by name in ascending order.
+
+Additional Notes
+The star systems will always be the same (Artemis-Tau, Serpent-Nebula, Hades-Gamma and Kepler-Verge).
+A ship's health and shields should not fall below 0.
+The ship's fuel should be rounded to 1 digit after the decimal point.
+
+Examples
+Zero Test #1
+Input:
+create Frigate Normandy Serpent-Nebula ThanixCannon
+create Dreadnought DestinyAscension Serpent-Nebula KineticBarrier
+attack Normandy DestinyAscension
+attack Normandy DestinyAscension
+attack Normandy DestinyAscension
+status-report DestinyAscension
+plot-jump Normandy Artemis-Tau
+status-report Normandy
+over
+
+Output:
+Created Frigate Normandy
+Created Dreadnought DestinyAscension
+Normandy attacked DestinyAscension
+Normandy attacked DestinyAscension
+Normandy attacked DestinyAscension
+DestinyAscension has been destroyed
+--DestinyAscension - Dreadnought
+(Destroyed)
+Normandy jumped from Serpent-Nebula to Artemis-Tau
+--Normandy - Frigate
+-Location: Artemis-Tau
+-Health: 60
+-Shields: 50
+-Damage: 80
+-Fuel: 170.0
+-Enhancements: ThanixCannon
+-Projectiles fired: 3
+
+
+Zero Test #2
+Input:
+create Frigate Normandy Hades-Gamma
+create Cruiser Alarei Hades-Gamma
+create Dreadnought Sovereign Kepler-Verge
+status-report Alarei
+attack Normandy Alarei
+status-report Alarei
+status-report Normandy
+attack Alarei Normandy
+status-report Normandy
+plot-jump Sovereign Hades-Gamma
+attack Sovereign Alarei
+attack Normandy Sovereign
+system-report Hades-Gamma
+system-report Artemis-Tau
+over
+
+Output:
+Created Frigate Normandy
+Created Cruiser Alarei
+Created Dreadnought Sovereign
+--Alarei - Cruiser
+-Location: Hades-Gamma
+-Health: 100
+-Shields: 100
+-Damage: 50
+-Fuel: 300.0
+-Enhancements: N/A
+Normandy attacked Alarei
+--Alarei - Cruiser
+-Location: Hades-Gamma
+-Health: 70
+-Shields: 40
+-Damage: 50
+-Fuel: 300.0
+-Enhancements: N/A
+--Normandy - Frigate
+-Location: Hades-Gamma
+-Health: 60
+-Shields: 50
+-Damage: 30
+-Fuel: 220.0
+-Enhancements: N/A
+-Projectiles fired: 1
+Alarei attacked Normandy
+--Normandy - Frigate
+-Location: Hades-Gamma
+-Health: 10
+-Shields: 50
+-Damage: 30
+-Fuel: 220.0
+-Enhancements: N/A
+-Projectiles fired: 1
+Sovereign jumped from Kepler-Verge to Hades-Gamma
+Sovereign attacked Alarei
+Alarei has been destroyed
+Normandy attacked Sovereign
+Intact ships:
+--Sovereign - Dreadnought
+-Location: Hades-Gamma
+-Health: 170
+-Shields: 240
+-Damage: 150
+-Fuel: 555.0
+-Enhancements: N/A
+--Normandy - Frigate
+-Location: Hades-Gamma
+-Health: 10
+-Shields: 50
+-Damage: 30
+-Fuel: 220.0
+-Enhancements: N/A
+-Projectiles fired: 2
+Destroyed ships:
+--Alarei - Cruiser
+(Destroyed)
+Intact ships:
+N/A
+Destroyed ships:
+N/A
+
+Zero Test #3
+Input:
+create Dreadnought Sovereign Kepler-Verge ExtendedFuelCells KineticBarrier
+create Dreadnought DestinyAscension Kepler-Verge ThanixCannon
+status-report Sovereign
+status-report DestinyAscension
+attack Sovereign DestinyAscension
+status-report DestinyAscension
+attack DestinyAscension Sovereign
+status-report Sovereign
+attack DestinyAscension Sovereign
+attack DestinyAscension Sovereign
+status-report Sovereign
+over
+
+Output:
+Created Dreadnought Sovereign
+Created Dreadnought DestinyAscension
+--Sovereign - Dreadnought
+-Location: Kepler-Verge
+-Health: 200
+-Shields: 400
+-Damage: 150
+-Fuel: 900.0
+-Enhancements: ExtendedFuelCells, KineticBarrier
+--DestinyAscension - Dreadnought
+-Location: Kepler-Verge
+-Health: 200
+-Shields: 300
+-Damage: 200
+-Fuel: 700.0
+-Enhancements: ThanixCannon
+Sovereign attacked DestinyAscension
+--DestinyAscension - Dreadnought
+-Location: Kepler-Verge
+-Health: 200
+-Shields: 0
+-Damage: 200
+-Fuel: 700.0
+-Enhancements: ThanixCannon
+DestinyAscension attacked Sovereign
+--Sovereign - Dreadnought
+-Location: Kepler-Verge
+-Health: 200
+-Shields: 200
+-Damage: 150
+-Fuel: 900.0
+-Enhancements: ExtendedFuelCells, KineticBarrier
+DestinyAscension attacked Sovereign
+DestinyAscension attacked Sovereign
+--Sovereign - Dreadnought
+-Location: Kepler-Verge
+-Health: 50
+-Shields: 0
+-Damage: 150
+-Fuel: 900.0
+-Enhancements: ExtendedFuelCells, KineticBarrier
