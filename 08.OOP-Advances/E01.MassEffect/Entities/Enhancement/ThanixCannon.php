@@ -17,6 +17,6 @@ class ThanixCannon extends EnhancementAbstract
 
     public function giveBonus(ShipInterface $ship)
     {
-        // TODO: Implement giveBonus() method.
+        $ship->setDamage($ship->getDamage() + self::DEFAULT_BONUS_DAMAGE);
     }
 }

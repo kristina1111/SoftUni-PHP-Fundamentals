@@ -17,6 +17,6 @@ class KineticBarrier extends EnhancementAbstract
 
     public function giveBonus(ShipInterface $ship)
     {
-        // TODO: Implement giveBonus() method.
+        $ship->setShields($ship->getShields() + self::DEFAULT_BONUS_SHILEDS);
     }
 }

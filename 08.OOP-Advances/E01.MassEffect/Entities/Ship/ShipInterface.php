@@ -10,6 +10,7 @@ namespace Entities\Ship;
 
 
 use Entities\Enhancement\EnhancementInterface;
+use Entities\Projectile\ProjectileInterface;
 use Entities\StarSystem\StarSystemInterface;
 
 interface ShipInterface
@@ -28,4 +29,10 @@ interface ShipInterface
     public function jumpToStarSystem(StarSystemInterface $starSystem);
     public function isAlive():bool;
     public function addEnhancement(EnhancementInterface $enhancement);
+    public function attack(ShipInterface $ship);
+    public function fireProjectile() : ProjectileInterface;
+    public function getFiredProjectiles():int;
+    public function setFiredProjectiles($number);
+    public function respondAttack(ProjectileInterface $projectile);
+    public function __toString();
 }

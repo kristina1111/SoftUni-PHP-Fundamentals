@@ -9,10 +9,17 @@
 namespace Entities\Enhancement;
 
 
-class EnhancementAbstract implements EnhancementInterface
+use Entities\Ship\ShipInterface;
+
+abstract class EnhancementAbstract implements EnhancementInterface
 {
 
     public function getName(): string
+    {
+        return basename(get_class($this));
+    }
+
+    public function __toString()
     {
         return basename(get_class($this));
     }

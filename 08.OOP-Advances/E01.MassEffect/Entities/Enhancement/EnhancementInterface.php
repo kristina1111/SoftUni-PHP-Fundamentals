@@ -13,5 +13,5 @@ use Entities\Ship\ShipInterface;
 
 interface EnhancementInterface
 {
-    public function giveBonus(ShipInterface $ship);
+    function giveBonus(ShipInterface $ship);
 }

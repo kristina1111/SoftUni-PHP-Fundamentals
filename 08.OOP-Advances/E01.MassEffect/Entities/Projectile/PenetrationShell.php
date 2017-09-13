@@ -16,6 +16,6 @@ class PenetrationShell extends ProjectileAbstract
 
     public function causeDamage(ShipInterface $ship)
     {
-        // TODO: Implement causeDamage() method.
+        $ship->setHealth($ship->getHealth() - $this->getDamage());
     }
 }

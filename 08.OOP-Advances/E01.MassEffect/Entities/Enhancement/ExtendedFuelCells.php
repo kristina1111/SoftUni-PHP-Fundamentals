@@ -17,6 +17,6 @@ class ExtendedFuelCells extends EnhancementAbstract
 
     public function giveBonus(ShipInterface $ship)
     {
-        // TODO: Implement giveBonus() method.
+        $ship->setFuel($ship->getFuel() + self::DEFAULT_BONUS_FUEL);
     }
 }

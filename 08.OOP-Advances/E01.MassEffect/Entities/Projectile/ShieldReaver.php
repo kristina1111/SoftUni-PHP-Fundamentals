@@ -13,9 +13,10 @@ use Entities\Ship\ShipInterface;
 
 class ShieldReaver extends ProjectileAbstract
 {
-
+    const DEFAULT_SHIELD_DAMAGE_MULTIPLIER = 2;
     public function causeDamage(ShipInterface $ship)
     {
-        // TODO: Implement causeDamage() method.
+        $ship->setHealth($ship->getHealth() - $this->getDamage());
+        $ship->setShields($ship->getShields() - self::DEFAULT_SHIELD_DAMAGE_MULTIPLIER * $this->getDamage());
     }
 }
